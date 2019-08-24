@@ -22,7 +22,7 @@ function init() {
             onKeyDownHandler(codes[i]);
           }
 
-      if (index === codes.length) {
+      if (index === codes.length -1) {
         alert("Victory!");
 
         index = 0;
