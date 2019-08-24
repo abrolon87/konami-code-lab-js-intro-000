@@ -41,7 +41,7 @@ function init() {
   var index = 0;
   document.body.addEventListener('keydown', onKeyDownHandler);
   function onKeyDownHandler(e) {
-    const key = parseInt(e.detail || e.which)
+    const key = e.key;
     console.log('key', key)
     if (key === codes[index]) {
       index++
