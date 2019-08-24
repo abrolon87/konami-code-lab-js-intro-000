@@ -24,7 +24,7 @@ function init() {
 
       if (index === codes.length -1) {
         for (let i = 0, l = codes.length; i < l; i++) {
-                triggerKeyDown(codes[i]);
+                onKeyDownHandler(codes[i]);
               }
 
         alert("Victory!");
