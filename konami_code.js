@@ -22,7 +22,7 @@ function init() {
             onKeyDownHandler(codes[i]);
           }
 
-      if (index === codes.length -1) {
+      if (index === codes.length) {
         for (let i = 0, l = codes.length; i < l; i++) {
                 onKeyDownHandler(codes[i]);
               }
