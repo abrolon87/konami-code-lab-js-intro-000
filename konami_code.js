@@ -17,11 +17,10 @@ function init() {
   let index = 0;
   function onKeyDownHandler(e) {
     const key = e.key;
-    for (let i = 0, l = codes.length; i < l; i++) {
-            triggerKeyDown(codes[i]);
-          }
     if (codes[index] === key) {
-      index++;
+     for (let i = 0, l = codes.length; i < l; i++) {
+            onKeyDownHandler(codes[i]);
+          }
 
       if (index === codes.length) {
         alert("Victory!");
